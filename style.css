@@ -1,0 +1,133 @@
+body {margin: 0;}
+
+#logo {width: auto;
+       height: auto;
+       max-height: 15vh;}
+
+#section-one {margin: 0;
+      background-image: url(https://www.hdwallpapers.in/download/lamborghini_huracan_evo_2019_4k_2-HD.jpg);
+      background-repeat: no repeat;
+	    background-size: cover;
+	    background-position: center;
+      width: 100vw;
+      height: 100vh;
+      max-width: 100%;
+      max-height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: space-evenly;
+      flex-wrap: wrap;}
+
+#section-two {margin: 0;
+      background-image: url(https://wallpapercave.com/wp/wp2642163.jpg);
+      background-repeat: no repeat;
+	    background-size: cover;
+	    background-position: center;
+      width: 100vw;
+      height: 100vh;
+      max-width: 100%;
+      max-height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: space-evenly;
+      flex-wrap: wrap;}
+
+#navbar {width: 100vw;
+         height: 15vh;
+         margin: 0;
+         max-width: 100%;
+         position: fixed;
+         background-color: rgb(25, 25, 25);
+         color: #FFF;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         padding-left: 15px;
+         font-family: Inter, sans-serif;
+         font-size: 1.1em;}
+
+#nav-half-one {width: 45%;
+         height: auto;
+         max-height: 100%;
+         margin-left: 0px;
+         background-color: rgb(25, 25, 25);
+         color: #FFF;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0px 5px 0px 5px;}
+
+#nav-half-two {width: 30%;
+         height: auto;
+         max-height: 100%;
+         margin-right: 20px;
+         background-color: rgb(25, 25, 25);
+         color: #FFF;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: center;
+         padding: 0px 5px 0px 5px;}
+
+#main-banner {margin-top: 30vh;
+              margin-left: 10vw;
+              width: 40vw;
+              height: auto;
+              max-height: 40%;
+              max-width: 50%;
+              color: #FFF;
+              font-size: 4em;
+              font-family: Robot, sans-serif;}
+
+#banner-two {margin-top: 30vh;
+              margin-left: 10vw;
+              width: 40vw;
+              height: auto;
+              max-height: 50%;
+              max-width: 50%;
+              color: #FFF;
+              font-size: 4em;
+              font-family: Robot, sans-serif;}
+
+#banner-button-1 {cursor: pointer;}
+
+#banner-button-2 {cursor: pointer;}
+
+#banner-button-3 {cursor: pointer;}
+
+#banner-buttons {display: flex;
+                 flex-direction: row;
+                 justify-content: center;
+                 align-self: flex-end;
+                 align-items: center;
+                 margin-right: 0px;
+                 margin-top: 40vh;
+                 width: 30vw;
+                 height: 10vh;
+                 max-width: 50%;
+                 max-height: 20%;}
+
+.nav-icon {width: 20px;
+           height: 20px;
+           max-height: 100%;
+           background-color: rgba(155, 155, 155, 0.5);
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           align-items: center;
+           border: solid 1px white;
+           border-radius: 20%;}
+
+.banner-button-off {width: 40px;
+                height: 2px;
+                margin: 0px 5px 0px 5px;
+                background-color: #AAA;}
+
+.banner-button-on {background-color: #FFF;
+                  height: 3.2px;
+                  width: 40px;
+                  margin: 0px 5px 0px 5px;}
