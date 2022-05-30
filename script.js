@@ -1,12 +1,20 @@
-
-
 var sectionOneCounter = 0;
+
+let bannerButtonOne = document.getElementById("banner-button-1");
+
+let bannerButtonTwo = document.getElementById("banner-button-2");
+
+let bannerButtonThree = document.getElementById("banner-button-3");
+
+let mainBanner = document.getElementById("main-banner");
+
+let sectionOne = document.getElementById("section-one");
+
+let body = document.body;
 
 function changeBackground1() {
   
-  document.getElementById("section-one").style.backgroundImage = "url('https://www.99images.com/download-image/825758/4300x2867')";
-  
-  document.getElementById("main-banner").innerText = "UNLOCK ANY ROAD";
+  mainBanner.innerText = "UNLOCK ANY ROAD";
   
   if (sectionOneCounter == 0) {
   
@@ -36,11 +44,11 @@ function changeBackground1() {
   
 };
 
-function changeBackground2() {
+
+
+function changeBackground2() { 
   
-  document.getElementById("section-one").style.backgroundImage = "url('https://www.hdcarwallpapers.com/walls/matt_balck_lamborghini-HD.jpg')";
-  
-  document.getElementById("main-banner").innerText = "TAKE ALL YOUR SOULS TO DRIVE";
+  mainBanner.innerText = "TAKE ALL YOUR SOULS TO DRIVE";
   
   if (sectionOneCounter == 1) {
   
@@ -70,11 +78,11 @@ function changeBackground2() {
   
 };
 
+
+
 function changeBackground3() {
   
-  document.getElementById("section-one").style.backgroundImage = "url('https://www.hdwallpapers.in/download/lamborghini_huracan_evo_2019_4k_2-HD.jpg')";
-  
-  document.getElementById("main-banner").innerText = "IT TAKES TIME TO BECOME TIMELESS";
+  mainBanner.innerText = "IT TAKES TIME TO BECOME TIMELESS";
   
   if (sectionOneCounter == 2) {
   
@@ -104,3 +112,93 @@ function changeBackground3() {
   
 };
 
+
+
+function bannerAnimation1() {
+  
+  mainBanner.style.animationName = "slide-one-banner";
+  
+  mainBanner.style.animationDuration = "1000ms";
+  
+  mainBanner.style.animationIterationCount = 1;
+  
+  mainBanner.style.animationDelay = "1000ms";
+  
+  mainBanner.style.animationFillMode = "forwards";
+  
+  mainBanner.style.animationTimingFunction = "cubic-bezier(0.2, 0.9, 0.3, 0.99)";
+  
+  sectionOne.style.animationName = "section-white-1";
+  
+  sectionOne.style.animationDuration = "1000ms";
+  
+  sectionOne.style.animationIterationCount = 1;
+  
+  sectionOne.style.animationFillMode = "forwards";
+  
+};
+
+
+
+function bannerAnimation2() {
+  
+  mainBanner.style.animationName = "slide-two-banner";
+  
+  mainBanner.style.animationDuration = "1000ms";
+  
+  mainBanner.style.animationIterationCount = 1;
+  
+  mainBanner.style.animationDelay = "1000ms";
+  
+  mainBanner.style.animationFillMode = "forwards";
+  
+  mainBanner.style.animationTimingFunction = "cubic-bezier(0.2, 0.9, 0.3, 0.99)";
+  
+  sectionOne.style.animationName = "section-white-2";
+  
+  sectionOne.style.animationDuration = "1000ms";
+  
+  sectionOne.style.animationIterationCount = 1;
+  
+  sectionOne.style.animationFillMode = "forwards";
+  
+};
+
+
+
+function bannerAnimation3() {
+  
+  mainBanner.style.animationName = "slide-three-banner";
+  
+  mainBanner.style.animationDuration = "1000ms";
+  
+  mainBanner.style.animationIterationCount = 1;
+  
+  mainBanner.style.animationDelay = "1000ms";
+  
+  mainBanner.style.animationFillMode = "forwards";
+  
+  mainBanner.style.animationTimingFunction = "cubic-bezier(0.2, 0.9, 0.3, 0.99)";
+  
+  sectionOne.style.animationName = "section-white-3";
+  
+  sectionOne.style.animationDuration = "1000ms";
+  
+  sectionOne.style.animationIterationCount = 1;
+  
+  sectionOne.style.animationFillMode = "forwards";
+  
+};
+
+
+bannerButtonOne.addEventListener('click', bannerAnimation1);
+
+bannerButtonOne.addEventListener('click', changeBackground3);
+
+bannerButtonTwo.addEventListener('click', bannerAnimation2);
+
+bannerButtonTwo.addEventListener('click', changeBackground1);
+
+bannerButtonThree.addEventListener('click', bannerAnimation3);
+
+bannerButtonThree.addEventListener('click', changeBackground2);
