@@ -1,5 +1,7 @@
 var sectionOneCounter = 0;
 
+var navOpen = "none";
+
 let bannerButtonOne = document.getElementById("banner-button-1");
 
 let bannerButtonTwo = document.getElementById("banner-button-2");
@@ -11,6 +13,24 @@ let mainBanner = document.getElementById("main-banner");
 let sectionOne = document.getElementById("section-one");
 
 let body = document.body;
+
+let navbar = document.getElementById("navbar");
+
+let model = document.getElementById("models-menu");
+
+let custom = document.getElementById("custom-menu");
+
+let own = document.getElementById("own-menu");
+
+let motor = document.getElementById("motor-menu");
+
+let navButtonOne = document.getElementById("nav-button-1");
+
+let navButtonTwo = document.getElementById("nav-button-2");
+
+let navButtonThree = document.getElementById("nav-button-3");
+
+let navButtonFour = document.getElementById("nav-button-4");
 
 function changeBackground1() {
   
@@ -44,9 +64,9 @@ function changeBackground1() {
   
 };
 
-
-
-function changeBackground2() { 
+function changeBackground2() {
+  
+  
   
   mainBanner.innerText = "TAKE ALL YOUR SOULS TO DRIVE";
   
@@ -78,9 +98,9 @@ function changeBackground2() {
   
 };
 
-
-
 function changeBackground3() {
+  
+  
   
   mainBanner.innerText = "IT TAKES TIME TO BECOME TIMELESS";
   
@@ -112,8 +132,6 @@ function changeBackground3() {
   
 };
 
-
-
 function bannerAnimation1() {
   
   mainBanner.style.animationName = "slide-one-banner";
@@ -136,9 +154,7 @@ function bannerAnimation1() {
   
   sectionOne.style.animationFillMode = "forwards";
   
-};
-
-
+}
 
 function bannerAnimation2() {
   
@@ -162,9 +178,7 @@ function bannerAnimation2() {
   
   sectionOne.style.animationFillMode = "forwards";
   
-};
-
-
+}
 
 function bannerAnimation3() {
   
@@ -188,8 +202,469 @@ function bannerAnimation3() {
   
   sectionOne.style.animationFillMode = "forwards";
   
+}
+
+function modelDrop() {
+  
+  if (navOpen == "motor") {
+  
+  navbar.style.animationName = "nav-butt-1-fromMotor";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 1;
+  
+  custom.style.opacity = 0;
+    
+    own.style.opacity = 0;
+    
+    motor.style.opacity = 0;
+  
+  navOpen = "models";
+    
+    console.log(navOpen);
+    
+  } else if (navOpen == "own") {
+    
+  navbar.style.animationName = "nav-butt-1-fromOwn";
+    
+    navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 1;
+  
+  custom.style.opacity = 0;
+    
+    own.style.opacity = 0;
+    
+    motor.style.opacity = 0;
+  
+  navOpen = "models";
+    
+    console.log(navOpen);
+    
+       
+  } else if (navOpen == "custom") {
+    
+    navbar.style.animationName = "nav-butt-1-fromCustom";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 1;
+  
+  custom.style.opacity = 0;
+    
+    own.style.opacity = 0;
+    
+    motor.style.opacity = 0;
+  
+  navOpen = "models";
+    
+    console.log(navOpen);
+    
+    
+  } else if ( navOpen == "models") {
+    
+    console.log("BOOBSZ!");
+    
+  } else {
+    
+    navbar.style.animationName = "nav-butt-1";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 1;
+  
+  custom.style.opacity = 0;
+    
+    own.style.opacity = 0;
+    
+    motor.style.opacity = 0;
+  
+  navOpen = "models";
+    
+    console.log(navOpen);
+    
+     
+  };
+  
 };
 
+function customDrop() {
+  
+  if (navOpen == "models") {
+  
+  navbar.style.animationName = "nav-butt-2-fromModel";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 0;
+  
+  custom.style.opacity = 1;
+    
+    own.style.opacity = 0;
+    
+    motor.style.opacity = 0;
+    
+    navOpen = "custom"; 
+    
+    console.log(navOpen);
+    
+    
+  } else if (navOpen == "own") {
+    
+    navbar.style.animationName = "nav-butt-2-fromOwn";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 0;
+  
+  custom.style.opacity = 1;
+    
+    own.style.opacity = 0;
+    
+    motor.style.opacity = 0;
+    
+    navOpen = "custom"; 
+    
+    console.log(navOpen);
+    
+    
+  } else if (navOpen == "motor") {
+    
+    navbar.style.animationName = "nav-butt-2-fromMotor";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 0;
+  
+  custom.style.opacity = 1;
+    
+    own.style.opacity = 0;
+    
+    motor.style.opacity = 0;
+    
+    navOpen = "custom"; 
+    
+    console.log(navOpen);
+    
+    
+  } else if ( navOpen == "custom") {
+    
+    console.log("BOOBSZ!");
+    
+  } else {
+    
+    navbar.style.animationName = "nav-butt-2";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 0;
+  
+  custom.style.opacity = 1;
+    
+    own.style.opacity = 0;
+    
+    motor.style.opacity = 0;
+    
+    navOpen = "custom"; 
+    
+    console.log(navOpen);
+    
+    
+  };
+  
+};
+
+function ownDrop() {
+  
+  if (navOpen == "models") {
+    
+    navbar.style.animationName = "nav-butt-3-fromModel";
+    
+    navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 0;
+  
+  custom.style.opacity = 0;
+    
+  own.style.opacity = 1; 
+    
+    motor.style.opacity = 0;
+    
+    navOpen = "own"; 
+    
+    console.log(navOpen);
+    
+    
+  } else if (navOpen == "custom") {
+    
+    navbar.style.animationName = "nav-butt-3-fromCustom";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 0;
+  
+  custom.style.opacity = 0;
+    
+    own.style.opacity = 1;
+    
+    motor.style.opacity = 0;
+    
+    navOpen = "own"; 
+    
+    console.log(navOpen);
+    
+    
+  } else if (navOpen == "motor") {
+     
+    navbar.style.animationName = "nav-butt-3-fromMotor";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 0;
+  
+  custom.style.opacity = 0;
+    
+    own.style.opacity = 1;
+    
+    motor.style.opacity = 0;
+    
+    navOpen = "own";
+    
+    console.log(navOpen);
+    
+    
+  } else if ( navOpen == "own") {
+    
+    console.log("BOOBSZ!");
+    
+  } else {
+    
+    navbar.style.animationName = "nav-butt-3";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 0;
+  
+  custom.style.opacity = 0;
+    
+    own.style.opacity = 1;
+    
+    motor.style.opacity = 0;
+    
+    navOpen = "own";
+    
+    console.log(navOpen);
+    
+    
+  };
+  
+};
+
+function motorDrop() {
+  
+  if (navOpen == "models") {
+    
+    navbar.style.animationName = "nav-butt-4-fromModel";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 0;
+  
+  custom.style.opacity = 0;
+    
+  own.style.opacity = 0;  
+   
+    motor.style.opacity = 1;
+    
+    navOpen = "motor"; 
+    
+    console.log(navOpen);
+    
+    
+  } else if (navOpen == "custom") {
+    
+    navbar.style.animationName = "nav-butt-4-fromCustom";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 0;
+  
+  custom.style.opacity = 0;
+    
+    own.style.opacity = 0;
+    
+    motor.style.opacity = 1;
+    
+    navOpen = "motor"; 
+    
+    console.log(navOpen);
+    
+    
+  } else if (navOpen == "own") {
+     
+    navbar.style.animationName = "nav-butt-4-fromOwn";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 0;
+  
+  custom.style.opacity = 0;
+    
+    own.style.opacity = 0;
+    
+    motor.style.opacity = 1;
+    
+    navOpen = "motor";
+    
+    console.log(navOpen);
+    
+    
+  } else if ( navOpen == "motor") {
+    
+    console.log("BOOBSZ!");
+    
+  } else {
+    
+    navbar.style.animationName = "nav-butt-4";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  model.style.opacity = 0;
+  
+  custom.style.opacity = 0;
+    
+    own.style.opacity = 0;
+    
+    motor.style.opacity = 1;
+    
+    navOpen = "motor";
+    
+    console.log(navOpen);
+    
+    
+  }
+  
+};
+
+function closeMenu() {
+  
+  if (navOpen == "models") {
+  
+  navbar.style.animationName = "close-fromModel";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  navOpen = "none";
+    
+  } else if (navOpen == "custom") {
+    
+    navbar.style.animationName = "close-fromCustom";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  navOpen = "none";
+    
+  } else if (navOpen == "own") {
+    
+    navbar.style.animationName = "close-fromOwn";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  navOpen = "none";
+    
+  } else if (navOpen == "motor") {
+    
+    navbar.style.animationName = "close-fromMotor";
+  
+  navbar.style.animationDuration = "400ms";
+  
+  navbar.style.animationFillMode = "forwards";
+  
+  navbar.style.animationIterationCount = 1;
+  
+  navOpen = "none";
+    
+    
+  };
+  
+};
 
 bannerButtonOne.addEventListener('click', bannerAnimation1);
 
@@ -202,3 +677,13 @@ bannerButtonTwo.addEventListener('click', changeBackground1);
 bannerButtonThree.addEventListener('click', bannerAnimation3);
 
 bannerButtonThree.addEventListener('click', changeBackground2);
+
+navButtonOne.addEventListener("mouseover", modelDrop);
+
+navButtonTwo.addEventListener("mouseover", customDrop);
+
+navButtonThree.addEventListener("mouseover", ownDrop);
+
+navButtonFour.addEventListener("mouseover", motorDrop);
+
+navbar.addEventListener("mouseleave", closeMenu);
