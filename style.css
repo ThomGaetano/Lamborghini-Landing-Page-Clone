@@ -1,8 +1,17 @@
 body {margin: 0;}
 
-#logo {width: auto;
-       height: auto;
-       max-height: 15vh;}
+#logo {width: 160px;
+       height: 115px;
+       max-height: 115px;
+       min-width: 160px;
+       margin-left: -40px;}
+
+#custom-solutions {width: 100%;
+                   display: flex;
+                   flex-direction: row;
+                   justify-content: center;
+                   align-items: center;
+                   white-space: nowrap;}
 
 #section-one {margin: 0;
       background-image: url(https://www.hdwallpapers.in/download/lamborghini_huracan_evo_2019_4k_2-HD.jpg);
@@ -36,22 +45,42 @@ body {margin: 0;}
       align-items: space-evenly;
       flex-wrap: wrap;}
 
-#navbar {width: 100vw;
-         height: 15vh;
-         min-height: 65px;
+#mainbar {width: 100vw;
+         min-width: 100vw;
+         height: 94px;
+         min-height: 94px;
          margin: 0;
          max-width: 100%;
-         position: fixed;
+         position: relative;
          background-color: rgb(25, 25, 25);
          color: #FFF;
          display: flex;
          flex-direction: row;
          justify-content: space-between;
          align-items: center;
-         padding-left: 15px;
+         padding-left: 0px;
+         font-family: Inter, sans-serif;
+         font-size: 1em;
+         z-index: 4;}
+
+#navbar {width: 100vw;
+         height: 94px;
+         min-height: 94px;
+         margin: 0;
+         max-width: 100vw;
+         position: fixed;
+         background-color: rgb(25, 25, 25);
+         color: #FFF;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: center;
+         flex-wrap: wrap;
+         padding-left: 0px;
          font-family: Inter, sans-serif;
          font-size: 1.1em;
-         z-index: 4;}
+         z-index: 4;
+         overflow-y: hidden;}
 
 #nav-half-one {width: 45%;
          height: auto;
@@ -61,21 +90,21 @@ body {margin: 0;}
          color: #FFF;
          display: flex;
          flex-direction: row;
-         justify-content: space-between;
+         justify-content: flex-start;
          align-items: center;
-         padding: 0px 5px 0px 5px;}
+         padding: 0px 0px 0px 0px;}
 
 #nav-half-two {width: 30%;
          height: auto;
          max-height: 100%;
-         margin-right: 20px;
+         margin-right: 25px;
          background-color: rgb(25, 25, 25);
          color: #FFF;
          display: flex;
          flex-direction: row;
          justify-content: space-between;
          align-items: center;
-         padding: 0px 5px 0px 5px;}
+         padding: 0px 0px 0px 0px;}
 
 #main-banner {margin-top: 30vh;
               margin-left: -77.7vw;
@@ -119,6 +148,64 @@ body {margin: 0;}
                  max-height: 20%;
                  z-index: 1;}
 
+#models-menu {background-color: rgb(25, 25, 25);
+              width: auto;
+              height: 0%;
+              color: #FFF;
+              margin-left: 9.6%;
+              position: absolute;
+              z-index: 4;}
+
+#custom-menu {background-color: rgb(25, 25, 25);
+              width: auto;
+              height: 0%;
+              color: #FFF;
+              margin-left: 15.2%;
+              position: absolute;
+              z-index: 4;}
+
+#own-menu {background-color: rgb(25, 25, 25);
+              width: auto;
+              height: 0%;
+              color: #FFF;
+              margin-left: 26.2%;
+              position: absolute;
+              z-index: 4;}
+
+#motor-menu {background-color: rgb(25, 25, 25);
+              width: auto;
+              height: 0%;
+              color: #FFF;
+              margin-left: 33.4%;
+              position: absolute;
+              z-index: 4;}
+
+#models-menu h6 {font-size: 0.75em;}
+
+#models-menu h6:hover {opacity: 1;}
+
+#custom-menu h6 {font-size: 0.75em;}
+
+#custom-menu h6:hover {opacity: 1;}
+
+#own-menu h6 {font-size: 0.75em;}
+
+#own-menu h6:hover {opacity: 1;}
+
+#motor-menu h6 {font-size: 0.75em;}
+
+#motor-menu h6:hover {opacity: 1;}
+
+#dropdown {width: 100vw;
+            max-width: 100vw;
+            height: 0%;
+            background-color: rgb(25, 25, 25);
+            margin: 0px 0px 0px 0px;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            z-index: 4;}
+
 .nav-icon {width: 20px;
            height: 20px;
            max-height: 100%;
@@ -128,7 +215,9 @@ body {margin: 0;}
            justify-content: center;
            align-items: center;
            border: solid 1px white;
-           border-radius: 20%;}
+           border-radius: 20%;
+           margin-right: 5px;
+           cursor: pointer;}
 
 .banner-button-off {width: 55px;
                 height: 1.5px;
@@ -139,6 +228,40 @@ body {margin: 0;}
                   height: 3.2px;
                   width: 55px;
                   margin: 0px 5px 0px 5px;}
+
+.nav-button {cursor: pointer;
+             padding: 0em 1em 0em 1em;
+             width: auto;
+             max-height: 100%;
+             display: flex;
+             flex-direction: row;
+             justify-content: flex-start;
+             align-items: space-evenly;
+             flex-wrap: wrap;
+             margin-left: -13px;}
+
+.nav-button:hover > .nav-underline {animation-name: nav-underline-animation;
+                   animation-fill-mode: forwards;
+                   animation-duration: 200ms;
+                   animation-iteration-count: 1;
+                   animation-timing-function: linear;}
+
+.nav-underline {width: 0%;
+                height: 1px;
+                background-color: #FFF;
+                margin-top: -22px;}
+
+.models-menu-button {opacity: 0.6;
+                     cursor: pointer;}
+
+.custom-menu-button {opacity: 0.6;
+                     cursor: pointer;}
+
+.own-menu-button {opacity: 0.6;
+                     cursor: pointer;}
+
+.motor-menu-button {opacity: 0.6;
+                     cursor: pointer;}
 
 @keyframes slide-one-banner {
   
@@ -197,5 +320,152 @@ body {margin: 0;}
   
   100% {opacity: 1;
         background-image: url('https://www.hdcarwallpapers.com/walls/matt_balck_lamborghini-HD.jpg');}
+  
+}
+
+@keyframes nav-underline-animation {
+  
+  0% {width: 0%;}
+  
+  100% {width: 100%;}
+}
+
+@keyframes nav-butt-1 {
+  
+  0% {height: 94px;}
+  100% {height: 420px;}
+  
+}
+
+@keyframes nav-butt-1-fromCustom {
+  
+  0% {height: 320px;}
+  100% {height: 420px;}
+  
+}
+
+@keyframes nav-butt-1-fromOwn {
+  
+  0% {height: 420px;}
+  100% {height: 420px;}
+  
+}
+
+@keyframes nav-butt-1-fromMotor {
+  
+  0% {height: 460px;}
+  100% {height: 420px;}
+  
+}
+
+@keyframes nav-butt-2 {
+  
+  0% {height: 94px;}
+  100% {height: 320px;}
+  
+}
+
+@keyframes nav-butt-2-fromModel {
+  
+  0% {height: 420px;}
+  100% {height: 320px;}
+  
+}
+
+@keyframes nav-butt-2-fromOwn {
+  
+  0% {height: 420px;}
+  100% {height: 320px;}
+  
+}
+
+@keyframes nav-butt-2-fromMotor {
+  
+  0% {height: 460px;}
+  100% {height: 320px;}
+  
+}
+
+@keyframes nav-butt-3 {
+  
+  0% {height: 94px;}
+  100% {height: 420px;}
+  
+}
+
+@keyframes nav-butt-3-fromModel {
+  
+  0% {height: 420px;}
+  100% {height: 420px;}
+  
+}
+
+@keyframes nav-butt-3-fromCustom {
+  
+  0% {height: 320px;}
+  100% {height: 420px;}
+  
+}
+
+@keyframes nav-butt-3-fromMotor {
+  
+  0% {height: 460px;}
+  100% {height: 420px;}
+  
+}
+
+@keyframes nav-butt-4 {
+  
+  0% {height: 94px;}
+  100% {height: 460px;}
+  
+}
+
+@keyframes nav-butt-4-fromModel {
+  
+  0% {height: 420px;}
+  100% {height: 460px;}
+  
+}
+
+@keyframes nav-butt-4-fromCustom {
+  
+  0% {height: 320px;}
+  100% {height: 460px;}
+  
+}
+
+@keyframes nav-butt-4-fromOwn {
+  
+  0% {height: 420px;}
+  100% {height: 460px;}
+  
+}
+
+@keyframes close-fromModel {
+  
+  0% {height: 420px;}
+  100% {height: 94px;}
+  
+}
+
+@keyframes close-fromCustom {
+  
+  0% {height: 320px;}
+  100% {height: 94px;}
+  
+}
+
+@keyframes close-fromOwn {
+  
+  0% {height: 420px;}
+  100% {height: 94px;}
+  
+}
+
+@keyframes close-fromMotor {
+  
+  0% {height: 460px;}
+  100% {height: 94px;}
   
 }
